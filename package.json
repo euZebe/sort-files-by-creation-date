@@ -1,0 +1,11 @@
+{
+  "name": "filesSorter",
+  "version": "1.0.0",
+  "description": "sorts files in the given directory according to their creation date, either work-time or private-time",
+  "main": "index.js",
+  "author": "euZebe",
+  "license": "MIT",
+  "dependencies": {
+    "luxon": "^1.0.0"
+  }
+}

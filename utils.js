@@ -15,8 +15,8 @@ module.exports.getFileCreationDate = source => DateTime.fromMillis(lstatSync(sou
 
 module.exports.isWeekend = date => date.get('weekday') >= 6;
 module.exports.isWorkDayEvening = date => date.get('weekday') < 6 && (
-  date.get('hour') > 18 // UTC => 20h
-  || date.get('hour') < 5  // UTC => 7h
+  date.get('hour') > 16 // UTC => 18h
+  || date.get('hour') < 6  // UTC => 8h
 );
 
 module.exports.moveFileTo = (filePath, directory, subDirectory) => {
